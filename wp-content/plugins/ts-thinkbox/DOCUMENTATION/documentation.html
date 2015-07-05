@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>TS Display version 1.0 Documentation</title>
+	<link rel="stylesheet" href="css/install.css" type="text/css" />
+    <style type="text/css">
+<!--
+.listframe{
+	float:left; 
+	list-style-type:none; 
+	list-style-position:outside; 
+	margin-right:10px;
+}
+-->
+    </style>
+</head>
+<body>
+<h1 id="logo" style="text-align: center">
+	TS Thinkbox Wordpress Plugin
+</h1>
+<p style="text-align: center">Plugin Documentation</p>
+
+<h1>First Things First</h1>
+
+<p>Please take the time to read through the instructions and take notice of the instructions listed here, as <strong>many support related questions can be answered simply by re-reading these instructions</strong>.</p>
+<p>We will frequently update this theme for bug fix, add new features and more... <a href="http://twitter.com/templatesquare">please follow us on twitter</a> to get notification.</p>
+<p>If you still have a problems, please send a message to me via my profile page <a href="http://themeforest.net/user/templatesquare">http://themeforest.net/user/templatesquare</a>, please include the questions/problems, your site url and theme name.</p>
+<p style="text-align: right;">&#8212; TemplateSquare </p>
+<p style="text-align: right;">&nbsp;</p>
+<h1><a name="top"></a>Table of Content </h1>
+<ol>
+  <li><a href="#1">Plugin Installation</a></li>
+  <li><a href="#2">Thinkbox Content</a></li>
+  <li><a href="#3">Thinkbox Shortcode</a></li>
+  <li><a href="#4">Shortcode Examples</a></li>
+</ol>
+<p>&nbsp;</p>
+<h1><a name="1"></a>1. Plugin Installation</h1>
+<ol>
+  <li>Unzip the zip file that you downloaded from themeforest and locate the '<strong>ts-thinkbox</strong>' folders inside the '<strong>plugins</strong>' folder. This is the folder and contents you will need to upload to your webserver.</li>
+  <li>FTP Upload the '<strong>ts-thinkbox</strong>' folders to your 'wp-content/plugins/' directory on your web server, then you can activate the plugin.</li>
+  <li>After you activate the plugin, you will see '<strong>Thinkbox</strong>' tab in left menu.<br />
+  	<img src="images/ts-thinkbox-menu.gif" width="145" height="96" alt="Thinkbox Menu" /><br />
+    <br />
+  </li>
+</ol>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="2" id="2"></a>2. Thinkbox Content</h1>
+<p>Tutorial to add Thinkbox content</p>
+<p><em>Add Display Category</em></p>
+<ol>
+  <li> Click the '<strong>Thinkbox</strong>' tab. </li>
+  <li> Click the '<strong>Thinkbox Categories</strong>' Sub Tab. </li>
+  <li>Enter the category name of '<strong>Thinkbox</strong>' in the name box.</li>
+  <li>Click the '<strong>Add New Category</strong>' button and you are done! </li>
+  <li>You will see the category you just added in the right side area. <br />
+      <br />
+      <em>Adding display posts</em></li>
+  <li> Click the '<strong>Thinkbox</strong>' tab. </li>
+  <li> Click the '<strong>Add New</strong>' Sub Tab</li>
+  <li>Start filling in the blanks.</li>
+  <li>Select the '<strong>Thinkbox</strong>' category in the right '<strong>Thinkbox Category</strong>' section.<br />
+    <img src="images/ts-thinkbox-categories.gif" alt="2" width="282" height="313" /><br />
+      <br />
+  </li>
+  <li>'<strong>Upload</strong>' and '<strong>set featured image</strong>' for thumb image. This featured image will be used for image thumbnail. <br />
+  </li>
+  <li>Custom fields (optional)
+    <ul>
+        <li><strong>tb-thumb</strong>: the value is the url of the thumbnail image. <br />
+            <span id="result_box3"><span title="Jika anda gunakan bidang ini maka akan otomatis disable timthumb dan menggunakan image ini sebagai thumbnail di halaman portfolio">If you add tb-thumb custom field then it will not use the '<strong>featured image</strong>' as the thumbnail.</span></span></li>
+      <li><strong>tb-name</strong>: input the value with a name.</li>
+      <li><strong>tb-info</strong>: input the value with any useful info such as company's name or position</li>
+    </ul>
+  </li>
+  <li> When you are ready, click <strong>Publish</strong>. </li>
+  <li>You can add as many display posts as needed.</li>
+</ol>
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="3" id="3"></a>3. Thinkbox Shortcode</h1>
+<p>To use it, add a shortcode to a page like this: <br /><br />
+<strong>[ts-thinkbox col="2" frame="square" type=&quot;1&quot; showtitle="no" showname="yes" showthumb="yes"]</strong></p>
+<br />
+<p>Otherwise, you can : <br />
+<ol>
+	<li>Click <strong>ts-thinkbox icon</strong> and <strong>ts-thinkboxslider icon</strong> shown below :<br />
+	  <br />
+    <img src="images/icon.gif" alt="" width="658" height="64" /><br />
+	<em>Screenshot 1: TS Thinkbox icon and TS Thinkbox Slider</em><br /><br />
+    </li>
+  	<li>And you will see form TS Thinkbox like this :<br /><br />
+    <img src="images/formtsthinkbox.gif" alt="" width="672" height="723"/><br />
+    <em>Screenshot 2: TS Thinkbox form</em><br /><br />
+    </li>
+    <li>You can set the thinkbox from here. And click "Insert Thinkbox" to generate the shortcode.</li>
+    <li>if you click <strong>ts-thinkboxslider icon</strong> you will see form TS Thinkbox Slider like this :<br /><br />
+    <img src="images/formtsthinkboxslider.gif" alt="" width="672" height="536" /><br />
+    <em>Screenshot 3: TS Thinkbox Slider form</em><br /><br />
+    </li>
+    <li>You can set the thinkbox slider from here. And click "Insert Thinkbox Slider" to generate the shortcode.</li>
+    <li>When you are ready, click <strong>Publish</strong>.</li>
+</ol>
+</p>
+<p><strong>Ts Thinkbox Options default value :</strong></p>
+<code>
+'col' =&gt; '3',<br />  
+'postperpage' =&gt; '',<br />  
+'cat' =&gt; '',<br />
+'testiid' =&gt; '',<br />
+'type' =&gt; '1',<br />  
+'frame' =&gt; 'square',<br />
+'customclass' =&gt; ''<br />  
+'showtitle' =&gt; 'no',<br />  
+'showname' =&gt; 'yes'<br />
+'showinfo' =&gt; 'yes'<br />
+'showthumb' =&gt; 'yes'<br />
+</code>
+<ul>
+	<li><strong>col</strong> - [number]<br />
+    	Specify the number of columns. We provide 4 type of columns. if you input less than 1, it will change into 1. and if you input more than 4, it will change into 4.
+    </li>
+    <li><strong>postperpage</strong> - [number]<br />
+    	Specify the number of post that you want to display in every page. if you input -1 it will show all posts.
+    </li>
+    <li><strong>cat</strong> - [string]<br />
+    	Specify the display categories that you want to show.
+    </li>
+    <li><strong>testiid</strong> - [string]<br />
+    	Specify the specific Thinkbox post by input the ID. you can input multiple ID by using comma separated. for example : '810,812,814'
+    </li>
+    <li><strong>type</strong> - [number]<br />
+    Specify the Thinkbox type. you can choose between : '1' or '2'<br />
+    </li>
+    <li><strong>frame</strong> - [string]<br />
+    Specify the display frame that you want to show. you can choose between : 'square' or 'rounded'<br />
+    </li>
+    <li><strong>customclass</strong> - [string]<br />
+    	You can add custom class. If you want to custom the layout.
+    </li>
+    <li><strong>showtitle</strong> - [boolean]<br />
+    	Toggle to show the title.
+    </li>
+     <li><strong>showname</strong> - [boolean]<br />
+    	Toggle to show the name.
+    </li>
+     <li><strong>showinfo</strong> - [boolean]<br />
+    	Toggle to show the information.
+    </li>
+    <li><strong>showthumb</strong> - [number]<br />
+    	Toggle to show the image thumb.
+    </li>
+</ul>
+<p><strong>Ts Thinkbox Options default value :</strong></p>
+<code>
+'sliderfx' =&gt; 'scrollHorz',<br />  
+'postperpage' =&gt; '',<br />  
+'cat' =&gt; '',<br />
+'testiid' =&gt; '',<br />
+'customclass' =&gt; ''<br />  
+'showtitle' =&gt; 'no',<br />  
+'showname' =&gt; 'yes'<br />
+'showinfo' =&gt; 'yes'<br />
+</code>
+<ul>
+	<li><strong>sliderfx</strong> - [string]<br />
+    	Specify the Thinkbox Slider Effects. We provide 4 type of effects: "scrollHorz","fade","scrollUp","scrollDown".
+    </li>
+    <li><strong>postperpage</strong> - [number]<br />
+    	Specify the number of post that you want to display in every page. if you input -1 it will show all posts.
+    </li>
+    <li><strong>cat</strong> - [string]<br />
+    	Specify the display categories that you want to show.
+    </li>
+    <li><strong>testiid</strong> - [string]<br />
+    	Specify the specific Thinkbox post by input the ID. you can input multiple ID by using comma separated. for example : '810,812,814'
+    </li>
+    <li><strong>customclass</strong> - [string]<br />
+    	You can add custom class. If you want to custom the layout.
+    </li>
+    <li><strong>showtitle</strong> - [boolean]<br />
+    	Toggle to show the title.
+    </li>
+     <li><strong>showname</strong> - [boolean]<br />
+    	Toggle to show the name.
+    </li>
+     <li><strong>showinfo</strong> - [boolean]<br />
+    	Toggle to show the information.
+    </li>
+</ul>
+
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="4" id="4"></a>4. Shortcode Example</h1>
+<p>Here is some example how to use the shortcode.</p>
+<ol>
+	<li><strong>[ts-thinkbox cat="greetings" type="2" col="2" frame="rounded" postperpage="5"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-1/" target="_blank">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-1/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkbox cat="testimonial" postperpage="5"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-2/">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-2/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkbox type="2" cat="greetings2" col="3"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-3/">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-3/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkbox col="2" cat="testimonial" frame="rounded"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-4/">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-demo-4/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkboxslider cat="thinkboxslider" sliderfx="fade"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-1/" target="_blank">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-1/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkboxslider showname="no" cat="thinkboxslider" showinfo="no"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-2/">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-2/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkboxslider cat="thinkboxslider" sliderfx="scrollUp" postperpage="3"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-3/">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-3/</a><br /><br />
+    </li>
+    <li><strong>[ts-thinkboxslider cat="thinkboxslider" sliderfx="scrollDown" showtitle="yes" showinfo="no"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-4/">http://demowp.templatesquare.com/plugins/ts-thinkbox/thinkbox-slider-demo-4/</a>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+</body>
+</html>

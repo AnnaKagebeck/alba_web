@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>TS Display version 1.0 Documentation</title>
+	<link rel="stylesheet" href="css/install.css" type="text/css" />
+    <style type="text/css">
+<!--
+.style1 {color: #FF0000}
+.style2 {color: #FF0000; font-weight: bold; }
+.listframe{
+	float:left; 
+	list-style-type:none; 
+	list-style-position:outside; 
+	margin-right:10px;
+}
+-->
+    </style>
+</head>
+<body>
+<h1 id="logo" style="text-align: center">
+	TS Display Wordpress Plugin
+</h1>
+<p style="text-align: center">Plugin Documentation</p>
+
+<h1>First Things First</h1>
+
+<p>Please take the time to read through the instructions and take notice of the instructions listed here, as <strong>many support related questions can be answered simply by re-reading these instructions</strong>.</p>
+<p>We will frequently update this theme for bug fix, add new features and more... <a href="http://twitter.com/templatesquare">please follow us on twitter</a> to get notification.</p>
+<p>If you still have a problems, please send a message to me via my profile page <a href="http://themeforest.net/user/templatesquare">http://themeforest.net/user/templatesquare</a>, please include the questions/problems, your site url and theme name.</p>
+<p style="text-align: right;">&#8212; TemplateSquare </p>
+<p style="text-align: right;">&nbsp;</p>
+<h1><a name="top"></a>Table of Content </h1>
+<ol>
+  <li><a href="#1">Plugin Installation</a></li>
+  <li><a href="#2">Display Content</a></li>
+  <li><a href="#3">Display Shortcode</a></li>
+  <li><a href="#4">Display Settings</a></li>
+  <li><a href="#5">Shortcode Examples</a></li>
+</ol>
+<p>&nbsp;</p>
+<h1><a name="1"></a>1. Plugin Installation</h1>
+<ol>
+  <li>Unzip the zip file that you downloaded from themeforest and locate the '<strong>ts-display</strong>' folders inside the '<strong>plugins</strong>' folder. This is the folder and contents you will need to upload to your webserver.</li>
+  <li>FTP Upload the '<strong>ts-display</strong>' folders to your 'wp-content/plugins/' directory on your web server, then you can activate the plugin.</li>
+  <li>After you activate the plugin, you will see '<strong>Display</strong>' tab in left menu.<br />
+  	<img src="images/ts-display-menu.gif" width="149" height="102" alt="Display Menu" /><br />
+    <br />
+  </li>
+</ol>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="2" id="2"></a>2. Display Content</h1>
+<p>Tutorial to add Display content</p>
+<p><em>Add Display Category</em></p>
+<ol>
+  <li> Click the '<strong>Display</strong>' tab. </li>
+  <li> Click the '<strong>Display Categories</strong>' Sub Tab. </li>
+  <li>Enter the category name of '<strong>Display</strong>' in the name box.</li>
+  <li>Click the '<strong>Add New Category</strong>' button and you are done! </li>
+  <li>You will see the category you just added in the right side area. <br />
+      <br />
+      <em>Adding display posts</em></li>
+  <li> Click the '<strong>Display</strong>' tab. </li>
+  <li> Click the '<strong>Add New</strong>' Sub Tab</li>
+  <li>Start filling in the blanks.</li>
+  <li>Select the '<strong>Display</strong>' category in the right '<strong>Display Category</strong>' section.<br />
+      <img src="images/ts-display-categories.gif" alt="2" width="285" height="318" /><br />
+      <br />
+  </li>
+  <li>'<strong>Upload</strong>' and '<strong>set featured image</strong>' for portfolio. This featured image will be used for portfolio thumbnail. <br />
+  </li>
+  <li>Custom fields (optional)
+    <ul>
+        <li><strong>thumb</strong>: the value is the url of the thumbnail image. <br />
+            <span id="result_box3"><span title="Jika anda gunakan bidang ini maka akan otomatis disable timthumb dan menggunakan image ini sebagai thumbnail di halaman portfolio">If you add thumb custom field then it will not use the '<strong>featured image</strong>' as the thumbnail.</span></span></li>
+      <li><strong>lightbox</strong>: the value is the full url of the image/video location.</li>
+    </ul>
+  </li>
+  <li> When you are ready, click <strong>Publish</strong>. </li>
+  <li>You can add as many display posts as needed.</li>
+</ol>
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="3" id="3"></a>3. Display Shortcode</h1>
+<p>To use it, add a shortcode to a page like this: <br /><br />
+<strong>[ts-display col="4" frame="square" showtitle="yes" showdesc="yes" showmore="yes"]</strong></p><br />
+<p>Otherwise, you can : <br />
+<ol>
+	<li>Click <strong>ts-display icon</strong> shown below :<br /><br />
+    <img src="images/icon.gif" alt="" width="590" height="67" /><br />
+	<em>Screenshot 1: TS Display icon</em><br /><br />
+    </li>
+    <li>And you will see form like this :<br /><br />
+    <img src="images/formtsdisplay.gif" alt="" width="672" height="1087"/><br />
+    <em>Screenshot 2: TS Display form</em><br /><br />
+    </li>
+    <li>You can set the display from here. And click "Insert Display" to generate the shortcode.</li>
+    <li>When you are ready, click <strong>Publish</strong>.</li>
+</ol>
+</p>
+<p><strong>Options default value :</strong></p>
+<code>
+'col' =&gt; '3',<br />  
+'postperpage' =&gt; '8',<br />  
+'orderby' =&gt; 'date',<br />  
+'cat' =&gt; '',<br />  
+'frame' =&gt; 'default',<br />  
+'fbordercolor' =&gt; '#d5d5d5',<br />  
+'fbgcolor' =&gt; '#e9e9e9',<br />  
+'showtitle' =&gt; 'no',<br />  
+'showdesc' =&gt; 'no'<br />
+'showmore' =&gt; 'no'<br />
+'customclass' =&gt; ''<br />
+'contentwidth' =&gt; ''<br />
+'widthimg' =&gt; ''<br />
+'heightimg' =&gt; ''<br />
+'colspacing' =&gt; ''<br />
+'rowspacing' =&gt; ''
+</code>
+<ul>
+	<li><strong>col</strong> - [number]<br />
+    	Specify the number of columns. We provide 4 type of columns. if you input less than 1, it will change into 1. and if you input more than 4, it will change into 4.
+    </li>
+    <li><strong>postperpage</strong> - [number]<br />
+    	Specify the number of post that you want to display in every page. if you input -1 it will show all posts.
+    </li>
+    <li><strong>orderby</strong> - [string]<br />
+    	Specify the order of posts.
+    </li>
+    <li><strong>cat</strong> - [string]<br />
+    	Specify the display categories that you want to show.
+    </li>
+    <li><strong>frame</strong> - [string]<br />
+    Specify the display frame that you want to show.<br />
+        <ul>
+        	<li class="listframe"><img src="images/ts-display-frame1.jpg" alt="frame 1" width="140" height="100" /><br />Default</li>
+            <li class="listframe"><img src="images/ts-display-frame2.jpg" alt="frame 2" width="140" height="100" /><br />
+            Square</li>
+            <li class="listframe"><img src="images/ts-display-frame3.jpg" alt="frame 3" width="140" height="100" /><br />Rounded</li>
+        </ul>
+        <div style="clear:both"></div>
+    </li>
+   	<li><strong>fbordercolor</strong> - [hexa]<br />
+    	Specify the border color. This option is only for frame 2 and frame 3. default is "#d5d5d5".
+    </li>
+    <li><strong>fbgcolor</strong> - [hexa]<br />
+    	Specify the background color. This option is only for frame 2 and frame 3. default is "#d5d5d5".
+    </li>
+    <li><strong>showtitle</strong> - [boolean]<br />
+    	Toggle to show the title.
+    </li>
+     <li><strong>showdesc</strong> - [boolean]<br />
+    	Toggle to show the description.
+    </li>
+     <li><strong>showmore</strong> - [boolean]<br />
+    	Toggle to show the 'read more' link.
+    </li>
+    <li><strong>customclass</strong> - [string]<br />
+    	You can add custom class. If you want to custom the layout.
+    </li>
+    <li><strong>contentwidth</strong> - [number]<br />
+    	Specify how wide is your display container. Default value is from the TS Display settings.
+    </li>
+    <li><strong>widthimg</strong> - [number]<br />
+    	Specify your image width. Default value is from the TS Display settings.
+    </li>
+    <li><strong>heightimg</strong> - [number]<br />
+    	Specify your image height. Default value is from the TS Display settings.
+    </li>
+    <li><strong>colspacing</strong> - [number]<br />
+    	Specify the space between 2 columns. Default value is from the TS Display settings.
+    </li>
+    <li><strong>rowspacing</strong> - [number]<br />
+    	Specify the space between 2 rows. Default value is from the TS Display settings.
+    </li>
+</ul>
+
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="4" id="4"></a>4. Display Settings</h1>
+<p>You can set some of shortcode default value in display settings.</p>
+<ol>
+	<li>Go to <strong>Settings &gt;&gt; TS Display</strong></li>
+    <li>You will see TS Display form like the picture below.<br /><br />
+    <img src="images/ts-display-setting.gif" width="565" height="367" alt="" /><br />
+    <em>Screenshot 3: TS Display Setting form</em><br /><br /></li>
+    <li>You can set the default value from here. And click "<strong>Save Changes</strong>" if you finish.</li>
+</ol>
+
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+<h1><a name="5" id="5"></a>5. Shortcode Example</h1>
+<p>Here is some example how to use the shortcode.</p>
+<ol>
+	<li><strong>[ts-display cat="one-column" col="1" postperpage="3" showtitle="yes" showdesc="yes" showmore="yes" contentwidth="940" widthimg="600" heightimg="300"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-display/one-column/">http://demowp.templatesquare.com/plugins/ts-display/one-column/</a><br /><br />
+    </li>
+    <li><strong>[ts-display cat="two-column" col="2" postperpage="4" showtitle="yes" showdesc="yes" showmore="yes" widthimg="440" heightimg="260" colspacing="60" rowspacing="70"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-display/two-column/">http://demowp.templatesquare.com/plugins/ts-display/two-column/</a><br /><br />
+    </li>
+    <li><strong>[ts-display cat="three-column" postperpage="6" showtitle="yes" showdesc="yes" showmore="yes" contentwidth="940" widthimg="290" heightimg="180" colspacing="35" rowspacing="60"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-display/three-column/">http://demowp.templatesquare.com/plugins/ts-display/three-column/</a><br /><br />
+    </li>
+    <li><strong>[ts-display cat="four-column" col="4" showtitle="yes" showdesc="yes" showmore="yes" contentwidth="940" widthimg="210" heightimg="150" colspacing="33" rowspacing="50"]</strong><br />
+    	Here is the link for the example above : <a href="http://demowp.templatesquare.com/plugins/ts-display/four-column/">http://demowp.templatesquare.com/plugins/ts-display/four-column/</a>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+<p><a class="top" href="#top">back to top</a></p>
+<p>&nbsp;</p>
+</body>
+</html>
